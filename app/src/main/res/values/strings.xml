@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NByWebViewDemo</string>
+    <string name="app_name">网页浏览器</string>
 
     <string name="action_update">更新</string>
     <string name="action_about">关于</string>

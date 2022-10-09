@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ll_container"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jingbin.webviewstudy.ui.ByWebViewActivity">
 
     <androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/title_tool_bar"
@@ -28,5 +30,5 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-
 </LinearLayout>
+

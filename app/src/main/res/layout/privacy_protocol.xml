@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_privacy_protocol"
     android:orientation="vertical">
-
     <TextView
         android:text="温馨提示"
         android:textSize="18sp"
@@ -14,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <WebView
+    <com.tencent.smtt.sdk.WebView
         android:id="@+id/web_view"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"

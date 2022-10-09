@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/layout_main"
     android:background="@color/default_bg">
 
     <FrameLayout
@@ -11,7 +12,7 @@
         android:layout_height="match_parent"
         android:visibility="gone">
 
-        <com.example.nbywebviewdemo.view.CircleImageView
+        <com.example.jingbin.webviewstudy.view.CircleImageView
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_gravity="center_horizontal"
@@ -68,7 +69,7 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <com.example.nbywebviewdemo.view.DragFloatActionButton
+    <com.example.jingbin.webviewstudy.view.DragFloatActionButton
         android:id="@+id/floatingButton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -80,7 +81,7 @@
         android:clickable="true"
         android:visibility="gone" />
 
-    <com.example.nbywebviewdemo.view.NTSkipView
+    <com.example.jingbin.webviewstudy.view.NTSkipView
         android:id="@+id/tv_skip"
         android:layout_marginRight="10dp"
         android:layout_alignParentRight="true"
@@ -91,5 +92,4 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:visibility="gone" />
-
 </RelativeLayout>
