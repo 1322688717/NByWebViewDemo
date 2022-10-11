@@ -3,6 +3,7 @@ package com.Tpp8888.Tpp9999.ui;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.net.http.SslError;
@@ -18,7 +19,10 @@ import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.webkit.SslErrorHandler;
 import android.webkit.ValueCallback;
+import android.webkit.WebChromeClient;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -31,6 +35,7 @@ import androidx.core.content.ContextCompat;
 
 import com.Tpp8888.Tpp9999.R;
 import com.Tpp8888.Tpp9999.config.MyJavascriptInterface;
+import com.Tpp8888.Tpp9999.config.MyWebChromeClient;
 import com.Tpp8888.Tpp9999.utils.OneAesUtil;
 import com.Tpp8888.Tpp9999.utils.SPUtil;
 import com.Tpp8888.Tpp9999.view.DragFloatActionButton;
@@ -92,6 +97,9 @@ public class GoogleMainActivity extends Activity implements PrivacyProtocolDialo
                 decorView.setSystemUiVisibility(vis);
             }
         }
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
+                WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
         //  初始化view
         initViews();
         initWeb();

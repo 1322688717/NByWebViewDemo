@@ -117,12 +117,12 @@ public class ByWebView {
         // 网页内容的宽度自适应屏幕
         ws.setLoadWithOverviewMode(true);
         ws.setUseWideViewPort(true);
-        // 告诉WebView启用JavaScript执行。默认的是false。
+         //告诉WebView启用JavaScript执行。默认的是false。
         ws.setJavaScriptEnabled(true);
         //  页面加载好以后，再放开图片
         ws.setBlockNetworkImage(false);
         // 使用localStorage则必须打开
-        ws.setDomStorageEnabled(true);
+        //ws.setDomStorageEnabled(true);
         // 排版适应屏幕
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             ws.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
@@ -494,6 +494,7 @@ public class ByWebView {
             byWebView.loadUrl(url);
             return byWebView;
         }
+
     }
 
 }

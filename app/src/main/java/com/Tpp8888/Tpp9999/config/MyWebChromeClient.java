@@ -36,6 +36,7 @@ public class MyWebChromeClient extends WebChromeClient {
         this.mIWebPageView = mIWebPageView;
     }
 
+
     /**
      * 播放网络视频时全屏会被调用的方法
      */
