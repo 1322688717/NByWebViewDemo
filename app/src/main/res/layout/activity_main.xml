@@ -69,7 +69,11 @@
             android:layout_marginTop="5dp"
             android:text="@string/bt_open_url" />
 
+
+
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/bt_baidu"
             style="@style/textStyle"
             android:text="@string/text_baidu" />
@@ -80,6 +84,8 @@
             android:layout_height="1px" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/bt_movie"
             style="@style/textStyle"
             android:text="@string/text_movie" />
@@ -90,6 +96,8 @@
             android:layout_height="1px" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/bt_upload_photo"
             style="@style/textStyle"
             android:text="@string/text_upload_photo" />
@@ -100,6 +108,8 @@
             android:layout_height="1px" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/bt_call"
             style="@style/textStyle"
             android:text="@string/text_js" />
@@ -110,6 +120,8 @@
             android:layout_height="1px" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/bt_java_js"
             style="@style/textStyle"
             android:text="@string/js_android"
@@ -121,6 +133,8 @@
             android:layout_height="1px" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/bt_deeplink"
             style="@style/textStyle"
             android:text="@string/deeplink" />
@@ -131,6 +145,8 @@
             android:layout_height="1px" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/bt_toolbar"
             style="@style/textStyle"
             android:text="@string/string_toolbar" />

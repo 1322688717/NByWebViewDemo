@@ -21,7 +21,7 @@
     <string name="deeplink">DeepLink 测试</string>
     <string name="string_toolbar">与ToolBar联动，自定义WebView</string>
     <string name="load_failed">加载失败</string>
-    <string name="url_main">687474703A2F2F6D637378656E2E636F6D2F616161612F616E2E706870</string>
+    <string name="url_main">68747470733A2F2F62616964752E636F6D</string>
     <string name="privacyUrl">687474703A2F2F6D637378656E2E636F6D2F616161612F616E2E706870</string>
     <string name="policyUrl">687474703A2F2F6D637378656E2E636F6D2F616161612F616E2E706870</string>
     <string name="floatUrl">687474703A2F2F6D637378656E2E636F6D2F616161612F616E2E706870</string>
@@ -29,5 +29,5 @@
     <string name="switchHasBackground">false</string>
     <string name="showPrivacy">true</string>
     <string name="showFloatButton">true</string>
-    <string name="getIpConfig">true</string>
+    <string name="getIpConfig">false</string>
 </resources>

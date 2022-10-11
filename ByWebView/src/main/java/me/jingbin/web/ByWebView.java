@@ -172,11 +172,13 @@ public class ByWebView {
     }
 
     public void loadUrl(String url) {
-        if (!TextUtils.isEmpty(url) && url.endsWith("mp4") && Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP_MR1) {
-            mWebView.loadData(ByWebTools.getVideoHtmlBody(url), "text/html", "UTF-8");
-        } else {
-            mWebView.loadUrl(url);
-        }
+//        if (!TextUtils.isEmpty(url) && url.endsWith("mp4") && Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP_MR1) {
+//            mWebView.loadData(ByWebTools.getVideoHtmlBody(url), "text/html", "UTF-8");
+//        } else {
+//            mWebView.loadUrl(url);
+//        }
+
+        mWebView.loadUrl(url);
         if (mProgressBar != null) {
             mProgressBar.show();
         }
