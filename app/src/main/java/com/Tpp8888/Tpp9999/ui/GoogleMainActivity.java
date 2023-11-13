@@ -1,5 +1,7 @@
 package com.Tpp8888.Tpp9999.ui;
 
+import static com.Tpp8888.Tpp9999.utils.FileUtil.deleteRecursive;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -85,6 +87,7 @@ public class GoogleMainActivity extends Activity implements PrivacyProtocolDialo
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_web);
+        deleteRecursive(this);
         //  修改状态栏颜色
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             Window window = getWindow();
