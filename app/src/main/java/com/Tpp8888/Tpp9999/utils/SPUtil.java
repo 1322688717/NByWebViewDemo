@@ -8,7 +8,7 @@ public class SPUtil {
     /**
      * 保存在手机里面的文件名
      */
-     public static final String FILE_NAME = "share_data";
+     public static final String FILE_NAME = "firstsp";
 
 
     public static void put(Context context, String key, Object object) {

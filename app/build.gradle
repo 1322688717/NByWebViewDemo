@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.Tpp8888.Tpp9999"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 15
         versionName "3.3.1"
@@ -18,7 +18,15 @@ android {
         }
 
         archivesBaseName = "NByWebViewDemo"
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
     }
+
+
+
     buildTypes {
         release {
             minifyEnabled true
@@ -58,5 +66,8 @@ dependencies {
 
     implementation 'com.github.youlookwhat:ByWebView:1.2.1'
     implementation 'com.tencent:mmkv:1.2.14'
+
+    // 依赖androidx, 已升级AndroidX的项目集成下面的依赖
+    implementation "com.bytedance.tools.codelocator:codelocator-core:2.0.3"
 
 }
