@@ -245,23 +245,24 @@ public class GoogleMainActivity extends Activity implements PrivacyProtocolDialo
             floatingButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-//                    if (!TextUtils.isEmpty(mFloatUrl)) {
-//
-//                        skipLocalBrowser(mFloatUrl);
-//                    }
-
-                    if (bValue){
-                        kv.encode("bool", false);
-                        bValue = kv.decodeBool("bool");
-                        //skipLocalBrowser(mFloatUrl);
-                        mLayoutError.setVisibility(View.GONE);
-                        loadUrl(mFloatUrl);
-                        floatingButton.setBackgroundResource(R.mipmap.back);
-                    }else {
-                        kv.encode("bool", true);
-                        bValue = kv.decodeBool("bool");
-                        initData();
-                        floatingButton.setBackgroundResource(R.mipmap.icon_float);
+                    Log.d("TAG","mFloatUrl : "+mFloatUrl);
+                    if (!TextUtils.isEmpty(mFloatUrl)) {
+                        Log.d("TAG","bValue : "+bValue);
+                        if (bValue){
+                            kv.encode("bool", false);
+                            bValue = kv.decodeBool("bool");
+                            Log.d("TAG","bValue1 : "+bValue);
+                            //skipLocalBrowser(mFloatUrl);
+                            loadUrl(mFloatUrl);
+                            mLayoutError.setVisibility(View.GONE);
+                            floatingButton.setBackgroundResource(R.mipmap.back);
+                        }else {
+                            kv.encode("bool", true);
+                            bValue = true;
+                            Log.d("TAG","bValue2 : "+bValue);
+                            initData();
+                            floatingButton.setBackgroundResource(R.mipmap.icon_float);
+                        }
                     }
                 }
             });

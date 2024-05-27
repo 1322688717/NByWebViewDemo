@@ -6,14 +6,14 @@ android {
     defaultConfig {
         applicationId "com.Tpp8888.Tpp9999"
         minSdkVersion 19
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 15
         versionName "3.3.1"
         multiDexEnabled true
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         // tencent x5
         ndk {
-            abiFilters "armeabi", "armeabi-v7a","x86","x86_64"
+            abiFilters "arm64-v8a", "armeabi-v7a","x86","x86_64"
         }
 
         archivesBaseName = "NByWebViewDemo"
